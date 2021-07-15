@@ -25,12 +25,21 @@ function generatePassword() {
   var numberArray = ["1", "2", "3"]
   var specialArray = ["!", "@", "#"]
   var newPassword = ""
+  
   if (lower) {
     possibleCharacters = lowerArray.concat(possibleCharacters);
   }
 
   if (upper) {
     possibleCharacters = upperArray.concat(possibleCharacters);
+  }
+
+  if(number) {
+    possibleCharacters = numberArray.concat(possibleCharacters);
+  }
+
+  if(special) {
+    possibleCharacters = specialArray.concat(possibleCharacters);
   }
 
   for (var i = 0; i < size; i++) {
