@@ -19,7 +19,7 @@ function generatePassword() {
     size = prompt("How many characters long would like your password? Pick number between 8 and 128");  
   }
 
-  var lowerArray = ["a", "b", "c"]
+  var lowerArray = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
   var possibleCharacters = []
   var upperArray = ["A", "B", "C"]
   var numberArray = ["1", "2", "3"]
